@@ -1,0 +1,174 @@
+{
+    "type": "object",
+    "required": [
+        "coord",
+        "weather",
+        "base",
+        "main",
+        "visibility",
+        "wind",
+        "clouds",
+        "dt",
+        "sys",
+        "timezone",
+        "id",
+        "name",
+        "cod"
+    ],
+    "properties": {
+        "coord": {
+            "type": "object",
+            "required": [
+                "lon",
+                "lat"
+            ],
+            "properties": {
+                "lon": {
+                    "type": "number"
+                },
+                "lat": {
+                    "type": "number"
+                }
+            }
+        },
+        "weather": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "required": [
+                            "id",
+                            "main",
+                            "description",
+                            "icon"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "main": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "icon": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "base": {
+            "type": "string"
+        },
+        "main": {
+            "type": "object",
+            "required": [
+                "temp",
+                "feels_like",
+                "temp_min",
+                "temp_max",
+                "pressure",
+                "humidity"
+            ],
+            "properties": {
+                "temp": {
+                    "type": "number"
+                },
+                "feels_like": {
+                    "type": "number"
+                },
+                "temp_min": {
+                    "type": "number"
+                },
+                "temp_max": {
+                    "type": "number"
+                },
+                "pressure": {
+                    "type": "number"
+                },
+                "humidity": {
+                    "type": "number"
+                }
+            }
+        },
+        "visibility": {
+            "type": "integer"
+        },
+        "wind": {
+            "type": "object",
+            "required": [
+                "speed",
+                "deg"
+            ],
+            "properties": {
+                "speed": {
+                    "type": "number"
+                },
+                "deg": {
+                    "type": "number"
+                }
+            }
+        },
+        "clouds": {
+            "type": "object",
+            "required": [
+                "all"
+            ],
+            "properties": {
+                "all": {
+                    "type": "number"
+                }
+            }
+        },
+        "dt": {
+            "type": "integer"
+        },
+        "sys": {
+            "type": "object",
+            "required": [
+                "type",
+                "id",
+                "country",
+                "sunrise",
+                "sunset"
+            ],
+            "properties": {
+                "type": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "message": {
+                    "type": "number"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "sunrise": {
+                    "type": "integer"
+                },
+                "sunset": {
+                    "type": "integer"
+                }
+            }
+        },
+        "timezone": {
+            "type": "integer"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "cod": {
+            "type": "integer"
+        }
+    }
+  }
