@@ -67,6 +67,5 @@ ze_qa_api_challenge
 └── results
     ├── log.html
     ├── output.xml
-    ├── report.html
-    └── selenium-screenshot-X.png
+    └── report.html
 ```
