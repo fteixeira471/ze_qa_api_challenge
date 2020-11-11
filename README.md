@@ -18,7 +18,7 @@ Este é um projeto para testes automatizados da API OpenWeatherMap!
 ## **Preparando o Ambiente**
 Após a instalação das **Ferramentas Necessárias**, abra o terminal e execute os comandos a seguir:
 ```
-> 1. Clonar o projeto de automação web
+> 1. Clonar o projeto de automação
 
 git clone https://github.com/fteixeira471/ze_qa_api_challenge.git
 
