@@ -60,7 +60,7 @@ robot -d ./results -i zipcode atests
 
 
 
-## **Organização das Screenshots e Reports**
+## **Organização dos Reports**
 Em toda a execução dos testes são gerados relatórios tanto no terminal quanto em arquivos html/xml. Para manter a organização desses arquivos e não poluir a pasta raiz do projeto, é importante informar o parâmetro "```-d ./results```" (_conforme os exemplos no tópico acima_). Deste modo, as evidências serão armazenadas conforme a estrutura abaixo:
 ```
 ze_qa_api_challenge
